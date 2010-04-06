@@ -9,7 +9,9 @@
 		<link rel="stylesheet" href="stylesheets/blueprint/screen.css" type="text/css" media="screen, projection" />
 		<link rel="stylesheet" href="stylesheets/blueprint/print.css" type="text/css" media="print" />
 		<!--[if lt IE 8]><link rel="stylesheet" href="stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-    <script src="/javascripts/common.js" type="text/javascript"></script>
+    <script src="javascripts/common.js" type="text/javascript"></script>
+    <script src="javascripts/jquery-1.js" type="text/javascript"></script>
+    <script src="javascripts/menu.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="container">
@@ -39,9 +41,6 @@
 				</div>
 			</div>
 			
-			<div class="player span-24">
-				<!-- Video player goes here -->
-			</div>
 			
 			<div class="content span-24">
 				<h1>Nome Progetto</h1>
@@ -60,93 +59,87 @@
 							<input type="text" class="input" />
 							<input type="submit" class="search" value=""/>
 						</fieldset>
-						<div class="status">
-							<p class="right">
-								<span>Status</span>
-								<span>Created on</span>
-							</p>
-							<p class="left">
-								<span>Description</span>
-							</p>
-						</div>
 						<table class="tasks">
+							<tr>
+								<th></th>
+								<th colspan="2">Description</th>
+								<th>Status</th>
+								<th>Created on</th>
+							</tr>
 							<tr class="dark">
 								<td class="white"><input type="checkbox" class="checkbox"/></td>
 								<td class="thumbnail lc"><div class="thumbnail"><a href="#" class="thumbnail"></a></div></td>
 								<td class="task">Descrizione task descrizione task descrizio task [...]</td>
-								<td class="action">
-								<a href="#" class="rec"></a>
-								</td>
-								<td class="date">5 september</td>
+								<td class="action"><a href="#" class="rec"></a></td>
+								<td class="date">55 september</td>
 							</tr>
-						</table>
-						<table class="tasks">
 							<tr class="light">
 								<td class="white"><input type="checkbox" class="checkbox"/></td>
 								<td class="thumbnail"><div class="thumbnail"><a href="#" class="thumbnail"></a></div></td>
 								<td class="task">Descrizione task descrizione task descrizio task [...]</td>
-								<td class="action">
-								<a href="#" class="play"></a>
-								</td>
+								<td class="action"><a href="#" class="play"></a></td>
 								<td class="date">5 september</td>
 							</tr>
-						</table>
-						<table class="tasks">
+							<tr class="dark">
+								<td class="white"><input type="checkbox" class="checkbox"/></td>
+								<td class="thumbnail"><div class="thumbnail"><a href="#" class="thumbnail"></a></div></td>
+								<td class="task">Descrizione task descrizione task descrizio task [...] </td>
+								<td class="action"><a href="#" class="block"></a></td>
+								<td class="date">5 september</td>
+							</tr>
+							<tr class="light">
+								<td class="white"><input type="checkbox" class="checkbox"/></td>
+								<td class="thumbnail"><div class="thumbnail"><a href="#" class="thumbnail"></a></div></td>
+								<td class="task">Descrizione task descrizione task descrizio task [...]</td>
+								<td class="action"><a href="#" class="pause"></a></td>
+								<td class="date">5 september</td>
+							</tr>
 							<tr class="dark">
 								<td class="white"><input type="checkbox" class="checkbox"/></td>
 								<td class="thumbnail"><div class="thumbnail"><a href="#" class="thumbnail"></a></div></td>
 								<td class="task">Descrizione task descrizione task descrizio task [...]</td>
-								<td class="action">
-								<a href="#" class="block"></a>
-								</td>
+								<td class="action"><a href="#" class="stop"></a></td>
 								<td class="date">5 september</td>
 							</tr>
-						</table>
-						<table class="tasks">
 							<tr class="light">
 								<td class="white"><input type="checkbox" class="checkbox"/></td>
 								<td class="thumbnail"><div class="thumbnail"><a href="#" class="thumbnail"></a></div></td>
 								<td class="task">Descrizione task descrizione task descrizio task [...]</td>
-								<td class="action">
-								<a href="#" class="pause"></a>
-								</td>
-								<td class="date">5 september</td>
-							</tr>
-						</table>
-						<table class="tasks">
-							<tr class="dark">
-								<td class="white"><input type="checkbox" class="checkbox"/></td>
-								<td class="thumbnail"><div class="thumbnail"><a href="#" class="thumbnail"></a></div></td>
-								<td class="task">Descrizione task descrizione task descrizio task [...]</td>
-								<td class="action">
-								<a href="#" class="stop"></a>
-								</td>
-								<td class="date">5 september</td>
-							</tr>
-						</table>
-						<table class="tasks">
-							<tr class="light">
-								<td class="white"><input type="checkbox" class="checkbox"/></td>
-								<td class="thumbnail"><div class="thumbnail"><a href="#" class="thumbnail"></a></div></td>
-								<td class="task">Descrizione task descrizione task descrizio task [...]</td>
-								<td class="action">
-								<a href="#" class="rec-block"></a>
-								</td>
+								<td class="action"><a href="#" class="rec-block"></a></td>
 								<td class="date">5 september</td>
 							</tr>
 						</table>
 					</form>
+					<div class="page-navigation">
+						<ul class="right">
+							<li><a href="#">1</a></li>
+							<li><span class="current">2</span></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">next</a></li>
+							<li><span>...</span></li>
+							<li><a href="#">last</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="span-7 last"> 
 					<h3>VFX Team</h3>
-					<ul class="team">
-						<li><a href="#" class="name">Leandro Pedroni <span class="actions"><a href="#" class="details"></a><a href="#" class="send-mail"> </a></span></a> <i>(creative director)</i></li>
-						<li><a href="#" class="name">Leandro Pedroni <span class="actions"><a href="#" class="details"></a><a href="#" class="send-mail"> </a></span></a> <i>(creative director)</i></li>
-						<li><a href="#" class="name">Leandro Pedroni <span class="actions"><a href="#" class="details"></a><a href="#" class="send-mail"> </a></span></a> <i>(creative director)</i></li>
-						<li><a href="#" class="name">Leandro Pedroni <span class="actions"><a href="#" class="details"></a><a href="#" class="send-mail"> </a></span></a> <i>(creative director)</i></li>
-						<li><a href="#" class="name">Leandro Pedroni <span class="actions"><a href="#" class="details"></a><a href="#" class="send-mail"> </a></span></a> <i>(creative director)</i></li>
-						<li><a href="#" class="name">Leandro Pedroni <span class="actions"><a href="#" class="details"></a><a href="#" class="send-mail"> </a></span></a> <i>(creative director)</i></li>
-					</ul>
+					<div class="team">
+						<ul>
+							<li><a href="#" class="name">Leandro Pedroni </a> <i>(creative director)</i></li>
+							<li>
+								<a href="#" class="name">Leandro Pedroni </a>
+								<ul class="actions">
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+								</ul> 
+								<i>(creative director)</i>
+							</li>
+							<li><a href="#" class="name">Leandro Pedroni</a> <i>(creative director)</i></li>
+							<li><a href="#" class="name">Leandro Pedroni</a> <i>(creative director)</i></li>
+							<li><a href="#" class="name">Leandro Pedroni</a> <i>(creative director)</i></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
