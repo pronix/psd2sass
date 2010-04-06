@@ -5,6 +5,7 @@
     %meta{ :name => "description", :content => "Nerds United VFX, social short-and-video production platform" }
     %title
       Nerds United VFX
+    %link{ :href => "stylesheets/blueprint/custom_blueprint.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
     %link{ :href => "stylesheets/blueprint/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
     %link{ :href => "stylesheets/blueprint/print.css", :rel => "stylesheet", :type => "text/css", :media => "print" }
     /
@@ -16,40 +17,41 @@
     .container
       .header.span-20.prepend-4.last
         %h1.nuvfx
-          NU vfx
-          %span
+          %a{ :href => "#" }
+            NU vfx
+            %span
         .column
           %ul.menu.right.top
             %li
-              %a{ :href => "#" }
+              %a#header-menu-help{ :href => "#" }
                 help
             %li
-              %a{ :href => "#" }
+              %a#header-menu-search{ :href => "#" }
                 search
             %li
-              %a{ :href => "#" }
+              %a#header-menu-sign-in{ :href => "#" }
                 Sign In
           .right
             %ul.menu
               %li
-                %a{ :href => "#" }
+                %a#header-menu-blog{ :href => "#" }
                   blog
               %li
-                %a{ :href => "#" }
+                %a#header-menu-features{ :href => "#" }
                   features
               %li
-                %a{ :href => "#" }
+                %a#header-menu-plans{ :href => "#" }
                   plans
           .left
             %ul.menu
               %li
-                %a{ :href => "#" }
+                %a#header-menu-home{ :href => "#" }
                   Home
               %li
-                %a{ :href => "#" }
+                %a#header-menu-projects{ :href => "#" }
                   Projects
               %li
-                %a{ :href => "#" }
+                %a#header-menu-people{ :href => "#" }
                   People
       .content.span-24
         %h1
