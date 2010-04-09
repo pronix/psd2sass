@@ -1,134 +1,371 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <meta content="Nerds United VFX, social short-and-video production platform" name="description" />
-    <title>
-      Nerds United VFX
-    </title>
-    <link rel="stylesheet" href="stylesheets/blueprint/custom_blueprint.css" type="text/css" media="screen, projection" />
-		<link rel="stylesheet" href="stylesheets/blueprint/screen.css" type="text/css" media="screen, projection" />
-		<link rel="stylesheet" href="stylesheets/blueprint/print.css" type="text/css" media="print" />
-		<!--[if lt IE 8]><link rel="stylesheet" href="stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-    <script src="/javascripts/common.js" type="text/javascript"></script>
+    <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
+    <meta content='Nerds United VFX, social short-and-video production platform' name='description' />
+    <title>Nerds United VFX</title>
+    <link href="stylesheets/blueprint/custom_blueprint.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/blueprint/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/blueprint/player.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script type="text/javascript">var AUTH_TOKEN = "2TWmdHqG4mtqnFwuiGvq2w9qkCDfqMW/taZufeUg8lM=";</script>
+    
   </head>
   <body>
-    <div class="container ">
-    
-			<div class="header span-20 prepend-4 last">
-				<h1 class="nuvfx"><a href="#">Nu vfx<span></span></a></h1>
-				<div class="column">
-						<ul class="user menu right top">
-							<li><a href="#" id="header-usermenu-my-projects">my projects</a></li>
-							<li><a href="#" id="header-usermenu-my-team">my team</a></li>
-							<li><a href="#" id="header-usermenu-people">people</a></li>
-							<li><a href="#" id="header-usermenu-profile">profile</a></li>
-							<li><a href="#" id="header-usermenu-logout">logout</a></li>
-						</ul>
-						<div class="right">
-							<ul class="menu">
-								<li><a href="#" id="header-menu-blog">blog</a></li>
-								<li><a href="#" id="header-menu-features">features</a></li>
-								<li><a href="#" id="header-menu-plans">plans</a></li>
+    <div id='container' class='container'>
+      <div class="header span-20 prepend-4 last">
+				<h1 class="nuvfx">
+					<a href="#">
+						Nerds United VFX
+						<span></span>
+					</a>
+				</h1>
+        <div class='column last'>
+          <ul class='user menu right top'>
+            <li>
+              <a href='#' id='header-menu-help'>
+                help
+              </a>
+            </li>
+            <li>
+              <a href='#' id='header-menu-search'>
+                search
+              </a>
+            </li>
+            <li>
+              <a href="/account">ilpoldo</a> <span>(<a href="/sign_out">Sign Out</a>)</span>
+            </li>
+          </ul>
+          <div class='right'>
+            <ul class='menu'>
+              <li>
+                <a href='#'>
+                  blog
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  features
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  plans
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class='left'>
+            <ul class='menu'>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/projects">Projects</a>
+              </li>
+              <li>
+                <a href="/people">People</a>
+              </li>
+              <li>
+                <a href="/people/ilpoldo">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id='playerstripe'>
+				<div id='player'>
+					<div id='left-btn'><a href="#"></a></div>
+					<div class='p-content'>
+						<div class='btns-wr'>
+							<ul class='tabs'>
+								<li><a href='#' class='info'>info project</a></li>
+								<li><a href='#' class='comments'>12 comments</a></li>
+							</ul>
+							<ul class='btns'>
+								<li><a href='#' class='money'></a></li>
+								<li><a href='#' class='add'></a></li>
+								<li><a href='#' class='save'></a></li>
+								<li><a href='#' class='livello'></a></li>
+								<li><a href='#' class='zx'></a></li>
 							</ul>
 						</div>
-						<div class="left">
-							<ul class="menu">
-								<li><a href="#" id="header-menu-home">Home</a></li>
-								<li><a href="#" id="header-menu-projects">Projects</a></li>
-								<li><a href="#" id="header-menu-people">People</a></li>
+						<div class='img-wr'>
+							<div class='pink'>
+								<a href="#" class='close'></a>
+								<h2>Project name</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+									<a href="#" class='pink-btn'>Go to VFX project</a>
+								</p>
+							</div>
+							<img src="images/wall-i.jpg" alt="wall-i" />
+						</div>
+						<div class='bot-btns'>
+							<a href='#' class='play-btn'></a>
+							<div class='progress'>
+								<span class='corner-l'></span>
+								<span class='corner-r'></span>
+								<span class='pink-line'></span>
+							</div>
+							<div class='volume'><span class='volume-a'></span></div>
+							<ul class='btns'>
+								<li><a href='#' class='full-size'></a></li>
+								<li><a href='#' class='hd'></a></li>
+								<li><a href='#' class='home'></a></li>
 							</ul>
 						</div>
-				</div>
-			</div>
-			
-			<div class="player span-24">
-				<!-- Video player goes here -->
-			</div>
-			
-			<div class="content span-24">
-				<div class="points">
-					<h2>Features</h2>
-					<ul>
-						<li><a href="#"></a></li>
-						<li><a href="#" class="selected"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-					</ul>
-				</div>
-				<div class="span-24 border-tb">
-					<div class="span-6">
-						<a href="#" class="image"></a>
 					</div>
-					<div class="span-18 last">
-						<p><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ex</strong></p>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-					</div>
-				</div>
-				<div class="span-24 border-b">
-					<div class="points">
-						<h2>VFX Projects</h2>
-						<ul>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#" class="selected"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul>
-					</div>
-					<div class="span-6"><a href="#" class="new"></a><a href="#" class="image"></a></div>
-					<div class="span-6"><a href="#" class="image"></a></div>
-					<div class="span-6"><a href="#" class="image"></a></div>
-					<div class="span-6 last"><a href="#" class="image"></a></div>
-				</div>
-				<h2>VFX Community</h2>
-				<div class="span-11 append-1">
-					<h3>Blog</h3>
-					<ul class="posts">
-						<li>
-							<p><span class="date">Posted on 09-02-2010</span> in <a href="#">VFX Community</a> | <i>Commenti 1</i></p>
-							<p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ...</p>
-						</li>
-						<li>
-							<p><span class="date">Posted on 09-02-2010</span> in <a href="#">VFX Community</a> | <i>Commenti 1</i></p>
-							<p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ...</p>
-						</li>
-						<li>
-							<p><span class="date">Posted on 09-02-2010</span> in <a href="#">VFX Community</a> | <i>Commenti 1</i></p>
-							<p class="title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ...</p>
-						</li>
-					</ul>
-				</div>
-				<div class="span-6"> 
-					<h3>New releases</h3>
-					<ul class="team">
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-					</ul>
-				</div>
-				<div class="span-6 last"> 
-					<h3>Support</h3>
-					<ul class="team">
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-						<li><a href="#" class="name">Nome progetto 1 </a><i>(5 members)</i></li>
-					</ul>
+					<div id='right-btn'><a href="#"></a></div>
 				</div>
 			</div>
-
-      <div class="span-24">
-				<!-- footer -->
-			</div>
-			
+      <div class='content span-24'>
+        <div class='points'>
+          <h2>
+            Features
+          </h2>
+          <ul>
+            <li>
+              <a href='#'></a>
+            </li>
+            <li>
+              <a class='selected' href='#'></a>
+            </li>
+            <li>
+              <a href='#'></a>
+            </li>
+            <li>
+              <a href='#'></a>
+            </li>
+          </ul>
+        </div>
+        <div class='span-24 border-tb'>
+          <div class='span-6'>
+            <a class='image' href='#'></a>
+          </div>
+          <div class='span-18 last'>
+            <p>
+              <strong>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ex
+              </strong>
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class='span-24 border-b'>
+          <div class='points'>
+            <h2>
+              VFX Projects
+            </h2>
+            <ul>
+              <li>
+                <a href='#'></a>
+              </li>
+              <li>
+                <a href='#'></a>
+              </li>
+              <li>
+                <a class='selected' href='#'></a>
+              </li>
+              <li>
+                <a href='#'></a>
+              </li>
+              <li>
+                <a href='#'></a>
+              </li>
+              <li>
+                <a href='#'></a>
+              </li>
+            </ul>
+          </div>
+          <div class='span-6'>
+            <a class='new' href='#'></a>
+            <a class='image' href='#'></a>
+          </div>
+          <div class='span-6'>
+            <a class='image' href='#'></a>
+          </div>
+          <div class='span-6'>
+            <a class='image' href='#'></a>
+          </div>
+          <div class='span-6 last'>
+            <a class='image' href='#'></a>
+          </div>
+        </div>
+        <h2>
+          VFX Community
+        </h2>
+        <div class='span-11 append-1'>
+          <h3>
+            Blog
+          </h3>
+          <ul class='posts'>
+            <li>
+              <p>
+                <span class='date'>
+                  Posted on 09-02-2010
+                </span>
+                in
+                <a href='#'>
+                  VFX Community
+                </a>
+                |
+                <i>
+                  Commenti 1
+                </i>
+              </p>
+              <p class='title'>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ...
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class='date'>
+                  Posted on 09-02-2010
+                </span>
+                in
+                <a href='#'>
+                  VFX Community
+                </a>
+                |
+                <i>
+                  Commenti 1
+                </i>
+              </p>
+              <p class='title'>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ...
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class='date'>
+                  Posted on 09-02-2010
+                </span>
+                in
+                <a href='#'>
+                  VFX Community
+                </a>
+                |
+                <i>
+                  Commenti 1
+                </i>
+              </p>
+              <p class='title'>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ...
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class='span-6'>
+          <h3>
+            New releases
+          </h3>
+          <ul class='team'>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+          </ul>
+        </div>
+        <div class='span-6 last'>
+          <h3>
+            Support
+          </h3>
+          <ul class='team'>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+            <li>
+              <a class='name' href='#'>
+                Nome progetto 1
+              </a>
+              <i>
+                (5 members)
+              </i>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <script src="/javascripts/common.js" type="text/javascript"></script>
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   </body>
 </html>
