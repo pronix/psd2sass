@@ -1,65 +1,118 @@
 !!! Strict
 %html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
   %head
-    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %meta{ :content => "text/html;charset=utf-8", "http-equiv" => "Content-Type" }
     %meta{ :name => "description", :content => "Nerds United VFX, social short-and-video production platform" }
     %title
       Nerds United VFX
-    %link{ :href => "stylesheets/blueprint/custom_blueprint.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
-    %link{ :href => "stylesheets/blueprint/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
-    %link{ :href => "stylesheets/blueprint/print.css", :rel => "stylesheet", :type => "text/css", :media => "print" }
+    %link{ :href => "stylesheets/blueprint/custom_blueprint.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+    %link{ :href => "stylesheets/blueprint/screen.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+    %link{ :href => "stylesheets/blueprint/player.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
     /
-      [if lt IE 8]><link rel="stylesheet" href="stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]
-    %script{ :src => "/javascripts/common.js", :type => "text/javascript" }
+      [if lt IE 8]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <![endif]
+    %script{ :type => "text/javascript" }
+      var AUTH_TOKEN = "2TWmdHqG4mtqnFwuiGvq2w9qkCDfqMW/taZufeUg8lM=";
   %body
-    .container
+    #container.container
       .header.span-20.prepend-4.last
         %h1.nuvfx
           %a{ :href => "#" }
-            Nu vfx
+            Nerds United VFX
             %span
-        .column
+        .column.last
           %ul.user.menu.right.top
             %li
-              %a#header-usermenu-my-projects{ :href => "#" }
-                my projects
+              %a#header-menu-help{ :href => "#" }
+                help
             %li
-              %a#header-usermenu-my-team{ :href => "#" }
-                my team
+              %a#header-menu-search{ :href => "#" }
+                search
             %li
-              %a#header-usermenu-people{ :href => "#" }
-                people
-            %li
-              %a#header-usermenu-profile{ :href => "#" }
-                profile
-            %li
-              %a#header-usermenu-logout{ :href => "#" }
-                logout
+              %a{ :href => "/account" }
+                ilpoldo
+              %span
+                (
+                %a{ :href => "/sign_out" }
+                  Sign Out
+                )
           .right
             %ul.menu
               %li
-                %a#header-menu-blog{ :href => "#" }
+                %a{ :href => "#" }
                   blog
               %li
-                %a#header-menu-features{ :href => "#" }
+                %a{ :href => "#" }
                   features
               %li
-                %a#header-menu-plans{ :href => "#" }
+                %a{ :href => "#" }
                   plans
           .left
             %ul.menu
               %li
-                %a#header-menu-home{ :href => "#" }
+                %a{ :href => "/" }
                   Home
               %li
-                %a#header-menu-projects{ :href => "#" }
+                %a{ :href => "/projects" }
                   Projects
               %li
-                %a#header-menu-people{ :href => "#" }
+                %a{ :href => "/people" }
                   People
-      .player.span-24
-        /
-          Video player goes here
+              %li
+                %a{ :href => "/people/ilpoldo" }
+                  Profile
+      #playerstripe
+        #player
+          #left-btn
+            %a{ :href => "#" }
+          .p-content
+            .btns-wr
+              %ul.tabs
+                %li
+                  %a.info{ :href => "#" }
+                    info project
+                %li
+                  %a.comments{ :href => "#" }
+                    12 comments
+              %ul.btns
+                %li
+                  %a.money{ :href => "#" }
+                %li
+                  %a.add{ :href => "#" }
+                %li
+                  %a.save{ :href => "#" }
+                %li
+                  %a.livello{ :href => "#" }
+                %li
+                  %a.zx{ :href => "#" }
+            .img-wr
+              .pink
+                %a.close{ :href => "#" }
+                %h2
+                  Project name
+                %p
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  %a.pink-btn{ :href => "#" }
+                    Go to VFX project
+              %img{ :src => "images/wall-i.jpg", :alt => "wall-i" }
+            .bot-btns
+              %a.play-btn{ :href => "#" }
+              .progress
+                %span.corner-l
+                %span.corner-r
+                %span.pink-line
+              .volume
+                %span.volume-a
+              %ul.btns
+                %li
+                  %a.full-size{ :href => "#" }
+                %li
+                  %a.hd{ :href => "#" }
+                %li
+                  %a.home{ :href => "#" }
+          #right-btn
+            %a{ :href => "#" }
       .content.span-24
         .points
           %h2
@@ -214,6 +267,5 @@
                 Nome progetto 1
               %i
                 (5 members)
-      .span-24
-        /
-          footer
+    %script{ :src => "/javascripts/common.js", :type => "text/javascript" }
+    %link{ :href => "/stylesheets/print.css", :rel => "stylesheet", :media => "print", :type => "text/css" }
