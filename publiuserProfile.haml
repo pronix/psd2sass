@@ -1,0 +1,213 @@
+!!! Strict
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %meta{ :name => "description", :content => "Nerds United VFX, social short-and-video production platform" }
+    %title
+      Nerds United VFX
+    %link{ :href => "stylesheets/blueprint/custom_blueprint.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+    %link{ :href => "stylesheets/blueprint/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+    %link{ :href => "stylesheets/blueprint/print.css", :rel => "stylesheet", :type => "text/css", :media => "print" }
+    %link{ :href => "stylesheets/blueprint/player.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+    %link{ :href => "stylesheets/blueprint/publicuserprofile.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+    /
+      [if lt IE 8]><link rel="stylesheet" href="stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]
+    %script{ :src => "javascripts/common.js", :type => "text/javascript" }
+    %script{ :src => "javascripts/jquery-1.js", :type => "text/javascript" }
+    %script{ :src => "javascripts/menu.js", :type => "text/javascript" }
+  %body
+    .container.profile
+      .header.span-20.prepend-4.last
+        %h1.nuvfx
+          %a{ :href => "#" }
+            NU vfx
+            %span
+        .column
+          %ul.menu.right.top
+            %li
+              %a#header-menu-help{ :href => "#" }
+                help
+            %li
+              %a#header-menu-search{ :href => "#" }
+                search
+            %li
+              %a#header-menu-sign-in{ :href => "#" }
+                Sign In
+          .right
+            %ul.menu
+              %li
+                %a#header-menu-blog{ :href => "#" }
+                  blog
+              %li
+                %a#header-menu-features{ :href => "#" }
+                  features
+              %li
+                %a#header-menu-plans{ :href => "#" }
+                  plans
+          .left
+            %ul.menu
+              %li
+                %a#header-menu-home{ :href => "#" }
+                  Home
+              %li
+                %a#header-menu-projects{ :href => "#" }
+                  Projects
+              %li
+                %a#header-menu-people{ :href => "#" }
+                  People
+      #userpanel
+        .content.span-24
+          .span-18.colborder-r
+            %dl.user-info
+              %dd.u-pick
+                %img{ :src => "images/u-pick.png", :alt => "user pickture" }
+              %dd.username
+                %a{ :href => "#" }
+                  Username
+              %dd.date.dark
+                %span.comment-t
+                  %span
+                %span.comment-c
+                  member since:
+                  %i
+                    25th aprile 2009
+                %span.comment-b
+                  %span
+              %dd.comment.dark
+                %span.comment-t
+                  %span
+                %span.comment-c
+                  I'm working in these projects:
+                  %span.projects
+                    nome progetto 1  -  nome progetto 2  -  nome progetto 3
+                %span.comment-b
+                  %span
+          .span-6.last
+            %h3
+              Feedback
+            %ul.feedback
+              %li.flag
+                4
+              %li.cup
+                3
+              %li.time
+                5
+              %li.medal
+                6
+              %li.ball
+                9
+              %li.lamp
+                5
+      .content.span-24
+        .span-17.append-1.colborder-r
+          %h3
+            User's Showreel
+          #player-profile
+            #player
+              .p-content
+                .btns-wr
+                  %ul.btns
+                    %li
+                      %a.money{ :href => "#" }
+                    %li
+                      %a.add{ :href => "#" }
+                    %li
+                      %a.save{ :href => "#" }
+                    %li
+                      %a.livello{ :href => "#" }
+                    %li
+                      %a.zx{ :href => "#" }
+                .img-wr
+                  %img{ :src => "images/wall-i.jpg", :alt => "wall-i" }
+                .bot-btns
+                  %a.play-btn{ :href => "#" }
+                  .progress
+                    %span.corner-l
+                    %span.corner-r
+                    %span.pink-line
+                  .volume
+                    %span.volume-a
+                  %ul.btns
+                    %li
+                      %a.full-size{ :href => "#" }
+                    %li
+                      %a.hd{ :href => "#" }
+                    %li
+                      %a.home{ :href => "#" }
+          %h3
+            Comments
+          %ul.comments
+            %li
+              %dl.comments
+                %dd.u-pick
+                  %h3
+                    Leandro Pedroni
+                  %img{ :src => "images/u-pick.png", :alt => "user pickture" }
+                %dd.comment
+                  %span.comment-t
+                    %span
+                  %span.comment-c
+                    %i.date
+                      1 hour ago
+                    I'm working in these projects:
+                    %br
+                    nome progetto 1  -  nome progetto 2  -  nome progetto 3
+                    I'm working in these projects:
+                    %br
+                    nome progetto 1  -  nome progetto 2  -  nome progetto 3
+                    I'm working in these projects:
+                    %br
+                    nome progetto 1  -  nome progetto 2  -  nome progetto 3
+                  %span.comment-b
+                    %span
+            %li
+              %dl.comments
+                %dd.u-pick
+                  %h3
+                    Caroline Pires
+                  %img{ :src => "images/u-pick.png", :alt => "user pickture" }
+                %dd.comment.light
+                  %span.comment-t
+                    %span
+                  %span.comment-c
+                    %i.date
+                      1 hour ago
+                    Lorem ipsum dolor sit amet, consectetuer
+                    %a{ :href => "#" }
+                      adipiscing elit
+                    , sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                  %span.comment-b
+                    %span
+        .span-6.last
+          %h3
+            User's Projects
+          .team
+            %ul
+              %li
+                %a.name{ :href => "#" }
+                  Nome progetto 1
+              %li
+                %a.name{ :href => "#" }
+                  Nome progetto 1
+                %ul.watch-project
+                  %li
+                    %a{ :href => "#" }
+                      watch this project
+              %li
+                %a.name{ :href => "#" }
+                  Nome progetto 1
+              %li
+                %a.name{ :href => "#" }
+                  Nome progetto 1
+              %li
+                %a.name{ :href => "#" }
+                  Nome progetto 1
+          %h3
+            Search Project
+          %form.search{ :method => "post", :action => "#" }
+            %fieldset
+              %input.input{ :type => "text", :value => "Search a project", :onfocus => "this.value=''" }
+              %input.search{ :type => "submit", :value => "" }
+      .span-24
+        /
+          footer
