@@ -2,12 +2,21 @@
   margin-bottom: 4em
 
 
-#player
-  overflow: hidden
+.profile .conyent
+  padding-bottom: 4em
 
 
-#player-profile .p-content
-  margin-left: 0
+#player-profile
+  #player
+    width: 690px
+    padding: 0
+    height: 438px
+    overflow: hidden
+    float: none
+
+  .p-content
+    margin-left: 0
+    background: none
 
 
 .team .watch-project
@@ -38,6 +47,7 @@
 
 form.search
   margin-bottom: 1.67em
+  margin-left: 0
   border: none
   width: 209px
 
@@ -87,7 +97,7 @@ dl.user-info
     &.u-pick
       width: auto
       max-width: 122px
-      margin-left: 0
+      margin: 4px 0 0 0
       overflow: hidden
       padding: 5px
       background: url(../../images/u-pic-bg.png)
@@ -120,7 +130,7 @@ dl.user-info
         background-position: 100% -6px
 
     &.comment
-      margin: 14px 0 0 17px
+      margin: 10px 0 0 17px
 
     &.date .comment-c
       padding: 0 8px
@@ -163,16 +173,26 @@ dl.comments
       width: 108px
       margin-left: 0
       overflow: hidden
+      text-align: right
+      font-weight: bold
+      color: #4b4b4b
 
       h3
         font-size: 1.17em
         text-align: right
         font-weight: bold
+        color: #4b4b4b
+
+      a
+        font-size: 1.17em
+        font-weight: bold
+        color: #4b4b4b
+        display: block
+        margin-bottom: 1em
 
       img
         width: 52px
         border: 1px solid #000
-        vertical-align: bottom
         float: right
 
     &.username h3
@@ -188,7 +208,7 @@ dl.comments
       background-position: 100% -6px
 
     &.comment
-      margin: 7px 0 0 20px
+      margin: 7px 0 0 24px
 
     &.date .comment-c
       padding: 0 8px

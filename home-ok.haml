@@ -5,23 +5,23 @@
     %meta{ :name => "description", :content => "Nerds United VFX, social short-and-video production platform" }
     %title
       Nerds United VFX
-    %link{ :href => "stylesheets/blueprint/custom_blueprint.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
-    %link{ :href => "stylesheets/blueprint/screen.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
-    %link{ :href => "stylesheets/blueprint/player.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+    %link{ :href => "stylesheets/blueprint/custom_blueprint.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+    %link{ :href => "stylesheets/blueprint/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
     /
       [if lt IE 8]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
       <![endif]
     %script{ :type => "text/javascript" }
-      var AUTH_TOKEN = "2TWmdHqG4mtqnFwuiGvq2w9qkCDfqMW/taZufeUg8lM=";
+      var AUTH_TOKEN = "VFEAQTJBeFEi6DYluA6TVBarKXvf0KuTYY0HgxdDV78=";
+    %script{ :src => "/javascripts/swfobject2.js?1270633923", :type => "text/javascript" }
   %body
-    #container.container
+    #container
       .header.span-20.prepend-4.last
         %h1.nuvfx
-          %a{ :href => "#" }
+          %a{ :href => "http://nuvfx.local/" }
             Nerds United VFX
-            %span
-        .column.last
+          %span
+        .column
           %ul.user.menu.right.top
             %li
               %a#header-menu-help{ :href => "#" }
@@ -41,13 +41,13 @@
             %ul.menu
               %li
                 %a{ :href => "#" }
-                  blog
+                  Blog
               %li
                 %a{ :href => "#" }
-                  features
+                  Features
               %li
-                %a{ :href => "#" }
-                  plans
+                %a{ :href => "http://nuvfx.local/plans" }
+                  Sign Up &amp; Plans
           .left
             %ul.menu
               %li
@@ -63,10 +63,10 @@
                 %a{ :href => "/people/ilpoldo" }
                   Profile
       #playerstripe
-        #player
-          #left-btn
+        %div
+          #player-left-btn
             %a{ :href => "#" }
-          .p-content
+          #player
             .btns-wr
               %ul.tabs
                 %li
@@ -111,7 +111,7 @@
                   %a.hd{ :href => "#" }
                 %li
                   %a.home{ :href => "#" }
-          #right-btn
+          #player-right-btn
             %a{ :href => "#" }
       .content.span-24
         .points
