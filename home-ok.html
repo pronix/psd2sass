@@ -4,25 +4,23 @@
     <meta content='text/html;charset=utf-8' http-equiv='Content-Type' />
     <meta content='Nerds United VFX, social short-and-video production platform' name='description' />
     <title>Nerds United VFX</title>
-    <link href="stylesheets/blueprint/custom_blueprint.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/blueprint/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/blueprint/player.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/blueprint/custom_blueprint.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="stylesheets/blueprint/screen.css" type="text/css" media="screen, projection" />
     <!--[if lt IE 8]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <script type="text/javascript">var AUTH_TOKEN = "2TWmdHqG4mtqnFwuiGvq2w9qkCDfqMW/taZufeUg8lM=";</script>
+    <script type='text/javascript'>var AUTH_TOKEN = "VFEAQTJBeFEi6DYluA6TVBarKXvf0KuTYY0HgxdDV78=";</script>
     
+    <script src="/javascripts/swfobject2.js?1270633923" type="text/javascript"></script>
   </head>
   <body>
-    <div id='container' class='container'>
-      <div class="header span-20 prepend-4 last">
-				<h1 class="nuvfx">
-					<a href="#">
-						Nerds United VFX
-						<span></span>
-					</a>
-				</h1>
-        <div class='column last'>
+    <div id='container'>
+      <div class='header span-20 prepend-4 last'>
+        <h1 class='nuvfx'>
+          <a href="http://nuvfx.local/">Nerds United VFX</a>
+          <span></span>
+        </h1>
+        <div class='column'>
           <ul class='user menu right top'>
             <li>
               <a href='#' id='header-menu-help'>
@@ -42,18 +40,16 @@
             <ul class='menu'>
               <li>
                 <a href='#'>
-                  blog
+                  Blog
                 </a>
               </li>
               <li>
                 <a href='#'>
-                  features
+                  Features
                 </a>
               </li>
               <li>
-                <a href='#'>
-                  plans
-                </a>
+                <a href="http://nuvfx.local/plans">Sign Up &amp; Plans</a>
               </li>
             </ul>
           </div>
@@ -76,51 +72,85 @@
         </div>
       </div>
       <div id='playerstripe'>
-				<div id='player'>
-					<div id='left-btn'><a href="#"></a></div>
-					<div class='p-content'>
-						<div class='btns-wr'>
-							<ul class='tabs'>
-								<li><a href='#' class='info'>info project</a></li>
-								<li><a href='#' class='comments'>12 comments</a></li>
-							</ul>
-							<ul class='btns'>
-								<li><a href='#' class='money'></a></li>
-								<li><a href='#' class='add'></a></li>
-								<li><a href='#' class='save'></a></li>
-								<li><a href='#' class='livello'></a></li>
-								<li><a href='#' class='zx'></a></li>
-							</ul>
-						</div>
-						<div class='img-wr'>
-							<div class='pink'>
-								<a href="#" class='close'></a>
-								<h2>Project name</h2>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-									<a href="#" class='pink-btn'>Go to VFX project</a>
-								</p>
-							</div>
-							<img src="images/wall-i.jpg" alt="wall-i" />
-						</div>
-						<div class='bot-btns'>
-							<a href='#' class='play-btn'></a>
-							<div class='progress'>
-								<span class='corner-l'></span>
-								<span class='corner-r'></span>
-								<span class='pink-line'></span>
-							</div>
-							<div class='volume'><span class='volume-a'></span></div>
-							<ul class='btns'>
-								<li><a href='#' class='full-size'></a></li>
-								<li><a href='#' class='hd'></a></li>
-								<li><a href='#' class='home'></a></li>
-							</ul>
-						</div>
-					</div>
-					<div id='right-btn'><a href="#"></a></div>
-				</div>
-			</div>
+        <div>
+          <div id='player-left-btn'>
+            <a href='#'></a>
+          </div>
+          <div id='player'>
+            <div class='btns-wr'>
+              <ul class='tabs'>
+                <li>
+                  <a class='info' href='#'>
+                    info project
+                  </a>
+                </li>
+                <li>
+                  <a class='comments' href='#'>
+                    12 comments
+                  </a>
+                </li>
+              </ul>
+              <ul class='btns'>
+                <li>
+                  <a class='money' href='#'></a>
+                </li>
+                <li>
+                  <a class='add' href='#'></a>
+                </li>
+                <li>
+                  <a class='save' href='#'></a>
+                </li>
+                <li>
+                  <a class='livello' href='#'></a>
+                </li>
+                <li>
+                  <a class='zx' href='#'></a>
+                </li>
+              </ul>
+            </div>
+            <div class='img-wr'>
+              <div class='pink'>
+                <a class='close' href='#'></a>
+                <h2>
+                  Project name
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  <a class='pink-btn' href='#'>
+                    Go to VFX project
+                  </a>
+                </p>
+              </div>
+              <img alt='wall-i' src='images/wall-i.jpg' />
+            </div>
+            <div class='bot-btns'>
+              <a class='play-btn' href='#'></a>
+              <div class='progress'>
+                <span class='corner-l'></span>
+                <span class='corner-r'></span>
+                <span class='pink-line'></span>
+              </div>
+              <div class='volume'>
+                <span class='volume-a'></span>
+              </div>
+              <ul class='btns'>
+                <li>
+                  <a class='full-size' href='#'></a>
+                </li>
+                <li>
+                  <a class='hd' href='#'></a>
+                </li>
+                <li>
+                  <a class='home' href='#'></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id='player-right-btn'>
+            <a href='#'></a>
+          </div>
+        </div>
+      </div>
       <div class='content span-24'>
         <div class='points'>
           <h2>
