@@ -1,0 +1,57 @@
+﻿/* Shedule View
+-------------------*/
+h2.shedule {margin-bottom:5px;color:#000;}
+form.shedule {margin-bottom:40px;}
+form.shedule label, form.shedule  input.input {float:right;}
+form.shedule label, form.shedule  input {float:right;}
+table.shedule-view {margin-top:20px;}
+table.shedule-view td {height:91px;}
+table.shedule-view .first-line td {height:81px;}
+table.shedule-view th {padding:0;text-align:center;color:#adadad}
+table.shedule-view th.day {padding:0;border-left:1px solid #e5e5e5;font-weight:normal;}
+table.shedule-view th.bold {color:#7f7f7f;font-weight:bold;}
+table.shedule-view td.day {border-left:1px solid #fff;width:21px;vertical-align:top;}
+table.shedule-view .month-year {position:absolute;margin:-35px 0 0 0;display:block;}
+
+.shedule-view h3 {font-size:1.33em;font-weight:bold;margin:0.6em 0 1em 0;color:#333;}
+.shedule-view h4 {font-size:1em;font-weight:bold;margin:0.6em 0 1em 0;font-style:italic;color:#707070;}
+table.shedule-view div.thumbnail {background:url(../../images/thumbnail3.png) 0 0 no-repeat;width:221px;height:43px;margin-top:7px;font-size:0.86em;}
+table.shedule-view div.thumbnail h3 {margin:0.3em 0 0 0.5em;font-size:1.16em;}
+table.shedule-view div.thumbnail h4 {margin:0.7em 0 0 0.7em;font-size:0.92em;font-weight:normal;}
+table.shedule-view td.thumbnail {width:233px; }
+.shedule-view tr.dark td.thumbnail {background:url(../../images/dark-lc.png) 0 100% no-repeat;padding-right:0;}
+.shedule-view tr.light td.thumbnail {background:url(../../images/light-lc.png) 0 100% no-repeat;padding-right:0;}
+.shedule-view span.sep {width:3px;height:76px;position:absolute;display:block;margin:0;background:url(../../images/sep.png) 0 0 no-repeat;}
+.shedule-view div.sep {height:81px;width:3px;background:url(../../images/sep.png) 0 100% no-repeat;font-size:0.79em;}
+
+table.shedule-view tr.dark td.task {background-image:url(../../images/dark-rc.png);background-position:100% 100%;background-repeat:no-repeat;}
+table.shedule-view tr.light td.task {background-image:url(../../images/light-rc.png);background-position:100% 100%;background-repeat:no-repeat;}
+
+table.shedule-view .first-line .thumbnail {margin-top:0;}
+table.shedule-view .first-line div.timeline {margin-top:15px;}
+
+div.pointer {width:33px;margin:10px 0 0 0;height:1px;}/*to move the pointer - must set the left margin (margin-left:400px)*/
+	div.pointer span.pointer {position:relative;background:url(../../images/day-info.png) 50% 0 no-repeat;display:block;width:33px;height:40px;padding-top:5px;margin-left:-5px;color:#fff;text-align:center;}
+	a.pointer {z-index:300;position:absolute;display:block;width:12px;height:280px;background:url(../../images/pointer.png) 50% 100% no-repeat;text-decoration:none;margin:-5px 0 0 5px;}/*height pointer here*/
+	a.pointer:hover {color:#fff;}
+	a.pointer:visited {color:#fff;}
+
+div.timeline {height:39px;width:700px;margin-top:25px;position:absolute;z-index:200;}
+	div.timeline a{margin:0;position:relative;}
+	div.timeline span {float:left;height:22px;padding:17px 0 0 11px;background:url(../../images/timeline.png) 0 0 no-repeat;}
+	div.timeline span.rec {width:200px;padding-left:19px;}/*red timeline width*/
+	div.timeline span.pause {width:333px;padding-right:32px;background-position:100% -38px;}/*orange timeline width*/
+	div.timeline span.play {width:150px;padding-right:32px;background-position:100% -77px;}/*green timeline width*/
+	div.timeline span.stop {width:150px;padding-right:32px;background-position:100% -116px;}/*gray timeline width*/
+	div.timeline a {height:7px;float:left;background:transparent url(../../images/timeline.png) no-repeat 0 -193px;}
+	div.timeline a.rec {width:23px;}
+	div.timeline a.pause {width:8px;background-position:0 -156px;}
+	div.timeline a.play {width:8px;background-position:0 -179px;}
+	div.timeline a.stop {width:7px;background-position:0 -186px;}
+	div.timeline a.lock {height:15px;width:13px;float:right;margin-top:-5px;background-position:0 -164px;}
+
+i.tooltips {z-index:100;position:absolute;width:190px;display:block;overflow:hidden;visibility:hidden;text-align:left;color:#fff;font-style:normal;font-size:0.92em;}
+	i.tooltips b {display:block;font-weight:normal;z-index:99;display:block;width:170px;padding:0 10px;background:url(../../images/tooltipes.png) 0 0 no-repeat;}
+	i.tooltips b.t-c {height:10px;}
+	i.tooltips b.c {background:url(../../images/tooltipes-bg.png);}
+	i.tooltips b.b-c {height:17px;background-position:0 -10px;}

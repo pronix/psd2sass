@@ -30,7 +30,7 @@
 .close {display:block;width:17px;height:17px;float:right;margin-top:-5px;background:url(../../images/close.png) 0 0 no-repeat;color:#fff;text-align:center;}
 
 .bot-btns {height:42px;width:490px;margin:10px auto 0 auto;position:relative;z-index:1;padding:3px 75px 0 75px;}
-.bot-btns .btns{padding:0;}
+.bot-btns .btns{padding:0;width:90px;}
 a.play-btn {float:left;width:45px;height:25px;background:url(../../images/top-btns.png) 0 0 no-repeat;}
 .progress {float:left;margin:10px 0 0 12px;background:#333333;width:250px;height:8px;}
 .corner-l {position:absolute;background:url(../../images/progress.png) 0 0 no-repeat;width:8px;height:8px;}

@@ -1,42 +1,100 @@
 /* Project-list
 --------------------*/
-table.projects {margin-top:0;}
-.projects h3 {font-size:1.33em;font-weight:bold;margin:0.6em 0 1em 0}
-.projects td.thumbnail {width:100px;}
-.projects tr.dark td.thumbnail {background:url(../../images/dark-lc.png) 0 100% no-repeat;}
-.projects tr.light td.thumbnail {background:url(../../images/light-lc.png) 0 100% no-repeat;}
-.projects .task span.sep {width:3px;height:76px;position:absolute;display:block;margin:0;background:url(../../images/sep.png) 0 0 no-repeat;}
-.projects .task div.sep {height:73px;background:url(../../images/sep.png) 0 100% no-repeat;padding:10px 0 0 10px;font-size:0.86em;}
-.projects .task  {padding-left:10px;}
-table.projects tr.dark td.task {background-image:url(../../images/dark-rc.png);background-position:100% 100%;background-repeat:no-repeat;}
-table.projects tr.light td.task {background-image:url(../../images/light-rc.png);background-position:100% 100%;background-repeat:no-repeat;}
+ul.projects {
+  font-size: 1.17em;
+  margin:0 0 4em 0; 
+  list-style:none;}
+  ul.projects li  {
+    background: url(../../images/dark-rc.png) 100% 100% no-repeat; 
+    height:81px;
+    padding-top:10px; }
+  ul.projects li.light  {
+    background: url(../../images/light-rc.png) 100% 100% no-repeat; }
+  ul.projects span {
+		display:block;
+    height: 91px;
+    padding: 0 5px 0 3px; }
+  ul.projects p {
+    margin-bottom:0; }
+  ul.projects p.thumbnail {
+    width:100px;
+    height:91px;
+    float:left;
+    padding: 0 8px 0 8px;
+    background: url(../../images/task-corners.gif) no-repeat 0 0; }
+  ul.projects li.light p.thumbnail {
+    background: url(../../images/task-corners.gif) no-repeat 0 -182px; }
+  ul.projects p.description {
+    width:764px;
+    float:left;
+    padding: 5px 8px 0 8px;
+    margin-top:0.3em;
+    height:71px;
+    background: url(../../images/sep.png) 0 0 no-repeat; }
+  ul.projects p.description a {
+		color:#f41b77;
+		font-size:1.33em;
+		font-weight:bold;
+		text-decoration:none; }
+  ul.projects p.description a:hover {
+		color:#fff; }
+  ul.projects p.description i {
+		display:block;
+		font-style:normal;		
+		font-size:0.86em; 
+		padding-top:0.5em; }
+  ul.projects span.thumbnail {
+		background:url(../../images/thumbnail.png) no-repeat scroll 0 0;
+		height:52px;
+		display:block;
+		margin-top:10px;
+		padding:4px;
+		width:92px; } 
+  ul.projects a.thumbnail {
+		height:52px;
+		display:block;
+		width:92px; } 
+		   
+     
+/* Projects2
+----------------------*/     
+  ul.projects2 p.thumbnail {
+    width:120px; }
+  ul.projects2 p.thumbnail img{
+    margin:15px 0 0 0; }
+  ul.projects2 span.thumbnail {
+		background:url(../../images/thumbnail2.png) no-repeat scroll 0 0;
+		height:53px;
+		margin-top:15px;
+		padding:0;
+		width:117px; } 
+  ul.projects2 a.thumbnail {
+		height:53px;
+		padding:0;
+		width:117px; } 
 
-
-.projects2 h3 {font-size:1.33em;font-weight:bold;margin:0.6em 0 1em 0}
-table.projects2 td.thumbnail {width:124px; }
-table.projects2 div.thumbnail {background:url(../../images/thumbnail2.png) 0 0 no-repeat;width:117px;height:53px;margin-top:10px;font-size:0.86em;}
-.projects2 .task div.sep {height:73px;background:url(../../images/sep.png) 0 100% no-repeat;padding:10px 0 0 10px;font-size:0.86em;}
-.projects2 .task  {padding-left:10px;}
-.projects2 tr.dark td.thumbnail {background:url(../../images/dark-lc.png) 0 100% no-repeat;}
-.projects2 tr.light td.thumbnail {background:url(../../images/light-lc.png) 0 100% no-repeat;}
-table.projects2 tr.dark td.task {background-image:url(../../images/dark-rc.png);background-position:100% 100%;background-repeat:no-repeat;}
-table.projects2 tr.light td.task {background-image:url(../../images/light-rc.png);background-position:100% 100%;background-repeat:no-repeat;}
-
-
-.projects3 h3 {font-size:1.33em;font-weight:bold;margin:0.6em 0 1em 0}
-.projects3 h4 {font-size:1em;font-weight:bold;margin:0.6em 0 1em 0;font-style:italic;color:#f41b77;}
-table.projects3 div.thumbnail {background:url(../../images/thumbnail3.png) 0 0 no-repeat;width:221px;height:43px;margin-top:10px;font-size:0.86em;}
-table.projects3 div.thumbnail h3 {margin:0.3em 0 0 0.5em;font-size:1.16em;}
-table.projects3 div.thumbnail h4 {margin:0.7em 0 0 0.7em;font-size:0.92em;font-weight:normal;}
-table.projects3 td.thumbnail {width:233px; }
-.projects3 tr.dark td.thumbnail {background:url(../../images/dark-lc.png) 0 100% no-repeat;padding-right:0;}
-.projects3 tr.light td.thumbnail {background:url(../../images/light-lc.png) 0 100% no-repeat;padding-right:0;}
-.projects3 .task span.sep {width:3px;height:76px;position:absolute;display:block;margin:0;background:url(../../images/sep.png) 0 0 no-repeat;}
-.projects3 .task div.sep {height:73px;background:url(../../images/sep.png) 0 100% no-repeat;padding:10px 0 0 10px;font-size:0.79em;}
-
-table.projects3 tr.dark td.task {background-image:url(../../images/dark-rc.png);background-position:100% 100%;background-repeat:no-repeat;}
-table.projects3 tr.light td.task {background-image:url(../../images/light-rc.png);background-position:100% 100%;background-repeat:no-repeat;}
-
-
-
-
+/* Projects3
+----------------------*/     
+  ul.projects3 p.thumbnail,  ul.projects3 li.light p.thumbnail {
+    width:223px; 
+    background:url(../../images/thumbnail3.png) 50% 35% no-repeat;
+    padding:20px 10px;
+    height:51px; }
+  ul.projects3 p.thumbnail span {
+		height:auto;
+		font-size:1em;
+		margin:0 0 0 0.5em;
+		color:#f41b77;
+		padding:0;	
+		font-weight:bold; } 
+  ul.projects3 p.thumbnail i {
+		font-size:0.8em;
+		margin:0 0 0 0.63em;	
+		color:#f41b77; } 
+  ul.projects3 p.description {
+    width:664px;
+    float:left;
+    padding: 5px 8px 0 8px;
+    margin-top:0.3em;
+    height:71px;
+    background: url(../../images/sep.png) 0 0 no-repeat; }
