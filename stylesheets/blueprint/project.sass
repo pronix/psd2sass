@@ -1,169 +1,116 @@
-table.projects
-  margin-top: 0
+ul
+  &.projects
+    font-size: 1.17em
+    margin: 0 0 4em 0
+    list-style: none
 
+    li
+      background: url(../../images/dark-rc.png) 100% 100% no-repeat
+      height: 81px
+      padding-top: 10px
 
-.projects
-  h3
-    font-size: 1.33em
-    font-weight: bold
-    margin: 0.6em 0 1em 0
+      &.light
+        background: url(../../images/light-rc.png) 100% 100% no-repeat
 
-  td.thumbnail
-    width: 100px
-
-  tr
-    &.dark td.thumbnail
-      background: url(../../images/dark-lc.png) 0 100% no-repeat
-
-    &.light td.thumbnail
-      background: url(../../images/light-lc.png) 0 100% no-repeat
-
-  .task
-    padding-left: 10px
-
-    span.sep
-      width: 3px
-      height: 76px
-      position: absolute
+    span
       display: block
-      margin: 0
+      height: 91px
+      padding: 0 5px 0 3px
+
+    p
+      margin-bottom: 0
+
+      &.thumbnail
+        width: 100px
+        height: 91px
+        float: left
+        padding: 0 8px 0 8px
+        background: url(../../images/task-corners.gif) no-repeat 0 0
+
+    li.light p.thumbnail
+      background: url(../../images/task-corners.gif) no-repeat 0 -182px
+
+    p.description
+      width: 764px
+      float: left
+      padding: 5px 8px 0 8px
+      margin-top: 0.3em
+      height: 71px
       background: url(../../images/sep.png) 0 0 no-repeat
 
-    div.sep
-      height: 73px
-      background: url(../../images/sep.png) 0 100% no-repeat
-      padding: 10px 0 0 10px
-      font-size: 0.86em
+      a
+        color: #f41b77
+        font-size: 1.33em
+        font-weight: bold
+        text-decoration: none
 
+        &:hover
+          color: #fff
 
-table.projects tr
-  &.dark td.task
-    background-image: url(../../images/dark-rc.png)
-    background-position: 100% 100%
-    background-repeat: no-repeat
+      i
+        display: block
+        font-style: normal
+        font-size: 0.86em
+        padding-top: 0.5em
 
-  &.light td.task
-    background-image: url(../../images/light-rc.png)
-    background-position: 100% 100%
-    background-repeat: no-repeat
-
-
-.projects2 h3
-  font-size: 1.33em
-  font-weight: bold
-  margin: 0.6em 0 1em 0
-
-
-table.projects2
-  td.thumbnail
-    width: 124px
-
-  div.thumbnail
-    background: url(../../images/thumbnail2.png) 0 0 no-repeat
-    width: 117px
-    height: 53px
-    margin-top: 10px
-    font-size: 0.86em
-
-
-.projects2
-  .task
-    padding-left: 10px
-
-    div.sep
-      height: 73px
-      background: url(../../images/sep.png) 0 100% no-repeat
-      padding: 10px 0 0 10px
-      font-size: 0.86em
-
-  tr
-    &.dark td.thumbnail
-      background: url(../../images/dark-lc.png) 0 100% no-repeat
-
-    &.light td.thumbnail
-      background: url(../../images/light-lc.png) 0 100% no-repeat
-
-
-table.projects2 tr
-  &.dark td.task
-    background-image: url(../../images/dark-rc.png)
-    background-position: 100% 100%
-    background-repeat: no-repeat
-
-  &.light td.task
-    background-image: url(../../images/light-rc.png)
-    background-position: 100% 100%
-    background-repeat: no-repeat
-
-
-.projects3
-  h3
-    font-size: 1.33em
-    font-weight: bold
-    margin: 0.6em 0 1em 0
-
-  h4
-    font-size: 1em
-    font-weight: bold
-    margin: 0.6em 0 1em 0
-    font-style: italic
-    color: #f41b77
-
-
-table.projects3
-  div.thumbnail
-    background: url(../../images/thumbnail3.png) 0 0 no-repeat
-    width: 221px
-    height: 43px
-    margin-top: 10px
-    font-size: 0.86em
-
-    h3
-      margin: 0.3em 0 0 0.5em
-      font-size: 1.16em
-
-    h4
-      margin: 0.7em 0 0 0.7em
-      font-size: 0.92em
-      font-weight: normal
-
-  td.thumbnail
-    width: 233px
-
-
-.projects3
-  tr
-    &.dark td.thumbnail
-      background: url(../../images/dark-lc.png) 0 100% no-repeat
-      padding-right: 0
-
-    &.light td.thumbnail
-      background: url(../../images/light-lc.png) 0 100% no-repeat
-      padding-right: 0
-
-  .task
-    span.sep
-      width: 3px
-      height: 76px
-      position: absolute
+    span.thumbnail
+      background: url(../../images/thumbnail.png) no-repeat scroll 0 0
+      height: 52px
       display: block
-      margin: 0
-      background: url(../../images/sep.png) 0 0 no-repeat
+      margin-top: 10px
+      padding: 4px
+      width: 92px
 
-    div.sep
-      height: 73px
-      background: url(../../images/sep.png) 0 100% no-repeat
-      padding: 10px 0 0 10px
-      font-size: 0.79em
+    a.thumbnail
+      height: 52px
+      display: block
+      width: 92px
 
+  &.projects2
+    p.thumbnail
+      width: 120px
 
-table.projects3 tr
-  &.dark td.task
-    background-image: url(../../images/dark-rc.png)
-    background-position: 100% 100%
-    background-repeat: no-repeat
+      img
+        margin: 15px 0 0 0
 
-  &.light td.task
-    background-image: url(../../images/light-rc.png)
-    background-position: 100% 100%
-    background-repeat: no-repeat
+    span.thumbnail
+      background: url(../../images/thumbnail2.png) no-repeat scroll 0 0
+      height: 53px
+      margin-top: 15px
+      padding: 0
+      width: 117px
+
+    a.thumbnail
+      height: 53px
+      padding: 0
+      width: 117px
+
+  &.projects3
+    p.thumbnail, li.light p.thumbnail
+      width: 223px
+      background: url(../../images/thumbnail3.png) 50% 35% no-repeat
+      padding: 20px 10px
+      height: 51px
+
+    p
+      &.thumbnail
+        span
+          height: auto
+          font-size: 1em
+          margin: 0 0 0 0.5em
+          color: #f41b77
+          padding: 0
+          font-weight: bold
+
+        i
+          font-size: 0.8em
+          margin: 0 0 0 0.63em
+          color: #f41b77
+
+      &.description
+        width: 664px
+        float: left
+        padding: 5px 8px 0 8px
+        margin-top: 0.3em
+        height: 71px
+        background: url(../../images/sep.png) 0 0 no-repeat

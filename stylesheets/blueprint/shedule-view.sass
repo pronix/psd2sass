@@ -1,0 +1,252 @@
+﻿ h2.shedule
+  margin-bottom: 5px
+  color: #000
+
+
+form.shedule
+  margin-bottom: 40px
+
+  input.input, label, input
+    float: right
+
+
+table.shedule-view
+  margin-top: 20px
+
+  td
+    height: 91px
+
+  .first-line td
+    height: 81px
+
+  th
+    padding: 0
+    text-align: center
+    color: #adadad
+
+    &.day
+      padding: 0
+      border-left: 1px solid #e5e5e5
+      font-weight: normal
+
+    &.bold
+      color: #7f7f7f
+      font-weight: bold
+
+  td.day
+    border-left: 1px solid #fff
+    width: 21px
+    vertical-align: top
+
+  .month-year
+    position: absolute
+    margin: -35px 0 0 0
+    display: block
+
+
+.shedule-view
+  h3
+    font-size: 1.33em
+    font-weight: bold
+    margin: 0.6em 0 1em 0
+    color: #333
+
+  h4
+    font-size: 1em
+    font-weight: bold
+    margin: 0.6em 0 1em 0
+    font-style: italic
+    color: #707070
+
+
+table.shedule-view
+  div.thumbnail
+    background: url(../../images/thumbnail3.png) 0 0 no-repeat
+    width: 221px
+    height: 43px
+    margin-top: 7px
+    font-size: 0.86em
+
+    h3
+      margin: 0.3em 0 0 0.5em
+      font-size: 1.16em
+
+    h4
+      margin: 0.7em 0 0 0.7em
+      font-size: 0.92em
+      font-weight: normal
+
+  td.thumbnail
+    width: 233px
+
+
+.shedule-view
+  tr
+    &.dark td.thumbnail
+      background: url(../../images/dark-lc.png) 0 100% no-repeat
+      padding-right: 0
+
+    &.light td.thumbnail
+      background: url(../../images/light-lc.png) 0 100% no-repeat
+      padding-right: 0
+
+  span.sep
+    width: 3px
+    height: 76px
+    position: absolute
+    display: block
+    margin: 0
+    background: url(../../images/sep.png) 0 0 no-repeat
+
+  div.sep
+    height: 81px
+    width: 3px
+    background: url(../../images/sep.png) 0 100% no-repeat
+    font-size: 0.79em
+
+
+table.shedule-view
+  tr
+    &.dark td.task
+      background-image: url(../../images/dark-rc.png)
+      background-position: 100% 100%
+      background-repeat: no-repeat
+
+    &.light td.task
+      background-image: url(../../images/light-rc.png)
+      background-position: 100% 100%
+      background-repeat: no-repeat
+
+  .first-line
+    .thumbnail
+      margin-top: 0
+
+    div.timeline
+      margin-top: 15px
+
+
+div.pointer
+  width: 33px
+  margin: 10px 0 0 0
+  height: 1px
+
+  span.pointer
+    position: relative
+    background: url(../../images/day-info.png) 50% 0 no-repeat
+    display: block
+    width: 33px
+    height: 40px
+    padding-top: 5px
+    margin-left: -5px
+    color: #fff
+    text-align: center
+
+
+a.pointer
+  z-index: 300
+  position: absolute
+  display: block
+  width: 12px
+  height: 280px
+  background: url(../../images/pointer.png) 50% 100% no-repeat
+  text-decoration: none
+  margin: -5px 0 0 5px
+
+  &:hover, &:visited
+    color: #fff
+
+
+div.timeline
+  height: 39px
+  width: 700px
+  margin-top: 25px
+  position: absolute
+  z-index: 200
+
+  a
+    margin: 0
+    position: relative
+
+  span
+    float: left
+    height: 22px
+    padding: 17px 0 0 11px
+    background: url(../../images/timeline.png) 0 0 no-repeat
+
+    &.rec
+      width: 200px
+      padding-left: 19px
+
+    &.pause
+      width: 333px
+      padding-right: 32px
+      background-position: 100% -38px
+
+    &.play
+      width: 150px
+      padding-right: 32px
+      background-position: 100% -77px
+
+    &.stop
+      width: 150px
+      padding-right: 32px
+      background-position: 100% -116px
+
+  a
+    height: 7px
+    float: left
+    background: transparent url(../../images/timeline.png) no-repeat 0 -193px
+
+    &.rec
+      width: 23px
+
+    &.pause
+      width: 8px
+      background-position: 0 -156px
+
+    &.play
+      width: 8px
+      background-position: 0 -179px
+
+    &.stop
+      width: 7px
+      background-position: 0 -186px
+
+    &.lock
+      height: 15px
+      width: 13px
+      float: right
+      margin-top: -5px
+      background-position: 0 -164px
+
+
+i.tooltips
+  z-index: 100
+  position: absolute
+  width: 190px
+  display: block
+  overflow: hidden
+  visibility: hidden
+  text-align: left
+  color: #fff
+  font-style: normal
+  font-size: 0.92em
+
+  b
+    display: block
+    font-weight: normal
+    z-index: 99
+    display: block
+    width: 170px
+    padding: 0 10px
+    background: url(../../images/tooltipes.png) 0 0 no-repeat
+
+    &.t-c
+      height: 10px
+
+    &.c
+      background: url(../../images/tooltipes-bg.png)
+
+    &.b-c
+      height: 17px
+      background-position: 0 -10px
